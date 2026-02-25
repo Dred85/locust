@@ -9,8 +9,6 @@ class LoadShape(LoadTestShape):
     """
     stages = [
         {"duration": 20, "users": 20, "spawn_rate": 1, "user_classes": [WebUser_UC01]},
-        # {"duration": 40, "users": 40, "spawn_rate": 1, "user_classes": [WebUser_UC03]},
-        # {"duration": 60, "users": 60, "spawn_rate": 1, "user_classes": [WebUser_UC04]},
         {"duration": 1800, "users": 60, "spawn_rate": 1}
     ]
 

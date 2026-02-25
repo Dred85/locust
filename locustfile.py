@@ -72,7 +72,6 @@ class UserBehaviour_UC04(TaskSet):
     loglevel = 'ERROR'
     logger = logging.getLogger('udp_logger')
     logger.setLevel(loglevel)
-    # dp = CSVReader('./pool.csv')
     tasks = [open_projects]
 
 
