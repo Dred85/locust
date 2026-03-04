@@ -1,6 +1,6 @@
 import logging
 
-from locust import HttpUser, TaskSet, between, User
+from locust import HttpUser, TaskSet, between
 
 from fastapi_main_uc01 import open_index
 from fastapi_contact_uc02 import open_contact
