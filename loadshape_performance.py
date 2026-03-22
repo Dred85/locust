@@ -79,7 +79,7 @@ class LoadShapePerformance(LoadTestShape):
     - Корректный формат ответа
     """
     stages = [
-        # Этап 1: Прогрев GET эндпоинтов (30 секунд)
+        # Этап 1: Прогрев (30 секунд)
         {"duration": 30, "users": 10, "spawn_rate": 2, "user_classes": [WebUser_UC01, WebUser_UC03, WebUser_UC04]},
         
         # Этап 2: Увеличение нагрузки на GET (60 секунд)
@@ -106,6 +106,5 @@ class LoadShapePerformance(LoadTestShape):
         for stage in self.stages:
             if run_time < stage["duration"]:
                 return stage["users"], stage["spawn_rate"]
-            run_time -= stage["duration"]
 
         return None
